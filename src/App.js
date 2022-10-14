@@ -1,7 +1,7 @@
 import React from "react";
 import CardDetail from "./components/CardDetail";
 // import Nav from "./components/Nav";
-import SpacingFlex from "./components/SpacingFlex";
+// import SpacingFlex from "./components/SpacingFlex";
 import { faker } from '@faker-js/faker';
 
 
@@ -24,10 +24,10 @@ const App = () => {
       <CardDetail image={faker.image.animals()}/>
       <CardDetail image={faker.image.food()}/>
 
-      <SpacingFlex/>
+      {/* <SpacingFlex/>
       <br></br>
       <hr></hr>
-      <SpacingFlex/>
+      <SpacingFlex/> */}
 
 
     </div>
