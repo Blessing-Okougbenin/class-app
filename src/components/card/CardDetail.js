@@ -1,6 +1,6 @@
 import React from 'react'
 import { faker } from '@faker-js/faker';
-import Wrapper from './Wrapper';
+import Wrapper from '../../utils/Wrapper';
 
   
 const CardDetail = (props) => {
@@ -30,6 +30,7 @@ const CardDetail = (props) => {
 }
 
 export default CardDetail
+
 // rafce
 // ctrl+d to select more than one thing
 // import tailwind from cdnjs.org

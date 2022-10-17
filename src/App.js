@@ -1,12 +1,14 @@
 import React from "react";
-import CardList from "./components/CardList";
+import CardList from "./components/card/CardList";
+import Counter from "./components/counter/Counter";
 import NewCard from "./components/NewCard";
 
 const App = () => {
   return (
     <div>
-      <NewCard/>
-     <CardList/>
+      {/* <NewCard/> */}
+      {/* <CardList/> */}
+     <Counter/>
     </div>
   
   )
