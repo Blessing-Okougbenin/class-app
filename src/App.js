@@ -6,8 +6,8 @@ import NewCard from "./components/NewCard";
 const App = () => {
   return (
     <div>
-      {/* <NewCard/> */}
-      {/* <CardList/> */}
+      <NewCard/>
+      <CardList/>
      <Counter/>
     </div>
   
