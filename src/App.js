@@ -1,6 +1,6 @@
 import React from "react";
 import CardList from "./components/card/CardList";
-import Counter from "./components/counter/Counter";
+// import Counter from "./components/counter/Counter";
 import NewCard from "./components/NewCard";
 
 const App = () => {
@@ -8,7 +8,7 @@ const App = () => {
     <div>
       <NewCard/>
       <CardList/>
-     <Counter/>
+     {/* <Counter/> */}
     </div>
   
   )
