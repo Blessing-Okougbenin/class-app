@@ -2,7 +2,7 @@ import React from 'react'
 
 const Wrapper = (props) => {
   return (
-    <div className='max-w-sm rounded border-2 border-red-700 overflow-hidden shadow-lg'>
+    <div className='max-w-sm rounded border-2  overflow-hidden shadow-lg'>
         {props.children}
     </div>
   )

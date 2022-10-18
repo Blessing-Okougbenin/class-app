@@ -1,5 +1,5 @@
 import { faker } from "@faker-js/faker";
-import React from "react";
+import React, { useState } from "react";
 import CardList from "./components/card/CardList";
 // import Counter from "./components/counter/Counter";
 import NewCard from "./components/NewCard";
@@ -26,11 +26,13 @@ const App = () => {
     description: faker.random.words(faker.random.numeric())
   },
 ]
+
+  const[data, setData] = useState(cardData);
+
   return (
     <div>
-      <NewCard/>
-      <CardList data={cardData}/>
-     {/* <Counter/> */}
+      <NewCard setData= {setData}/>
+      <CardList data={data}/>
     </div>
   
   )

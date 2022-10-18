@@ -1,0 +1,12 @@
+.cardList{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+
+}
+.cardAgain{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+
+}

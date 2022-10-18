@@ -12,11 +12,9 @@ const CardDetail = (props) => {
     alt={faker.word.adjective()}/>
 
     <div className="px-6 py-4">
-      <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
-      <p className="text-gray-700 text-base">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-        Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-      </p>
+      <div className="font-bold text-xl mb-2">{props.title}</div>
+      <p className="text-gray-700 text-base">{props.description}</p>
+        
     </div>
 
     <div className="px-6 pt-4 pb-2">
@@ -26,9 +24,13 @@ const CardDetail = (props) => {
     </div>
   </Wrapper>
   )
- 
- 
+  
 }
+CardDetail.defaultProps = {
+      title: "The Coldest Sunset",
+      description: "An unknown description",
+    
+    }
 
 
 

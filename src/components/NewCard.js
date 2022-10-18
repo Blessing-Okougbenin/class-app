@@ -4,29 +4,24 @@ import Button from "./button/Button";
 import { faker } from '@faker-js/faker';
 
 
-const NewCard = () => {
+const NewCard = ({setData}) => {
           const[inputs,setInputs] = useState({
             title: "",
             description : "",
           });
 
-          const[card, setCards] = useState({
-            id: "",
-            title: "",
-            description: "",
-            image: ""
-          })
 
           const addCardHandler = (event) => {
             event.preventDefault()
 
-              const cardObject = {
+              const cardData = {
                 id: faker.datatype.uuid(),
                 ...inputs,
                 image: faker.image.city()
               };
-              setCards(cardObject)
 
+                setData((prevCardData) => [cardData, ...prevCardData])
+              setInputs({title: "", description: ""});
           };
       
 
@@ -63,11 +58,7 @@ const NewCard = () => {
 
       </div>
       
-      <Button
-       displayname = "Add Card" 
-       bg="green" 
-       color="red"
-       />
+      <Button color='black'>Add Card</Button>
 
     </form>
   )

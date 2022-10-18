@@ -1,10 +1,10 @@
 import React from 'react'
 import CardDetail from "./CardDetail"
-import "./CardList.css";
+import  styles from "./CardList.module.css";
 
 const CardList = ({data}) => {
   return (
-    <div className="card-list">
+    <div className={`${styles.CardList} ${styles.cardAgain}`}>
       {data.map(d => <CardDetail 
         key={d.id}
         title={d.title} 
