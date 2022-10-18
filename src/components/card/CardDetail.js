@@ -27,7 +27,9 @@ const CardDetail = (props) => {
   </Wrapper>
   )
  
+ 
 }
+
 
 
 export default CardDetail

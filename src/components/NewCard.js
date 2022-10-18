@@ -64,7 +64,7 @@ const NewCard = () => {
       </div>
       
       <Button
-       displayName = "Add Card" 
+       displayname = "Add Card" 
        bg="green" 
        color="red"
        />
